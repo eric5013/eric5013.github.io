@@ -2,13 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>本安装文件仅供私人用途，未知情况下请勿安装！</string>
+	</dict>
+	<key>DurationUntilRemoval</key>
+	<integer>15552000</integer>
 	<key>HasRemovalPasscode</key>
-	<false/>
+	<true/>
 	<key>PayloadContent</key>
 	<array>
 		<dict>
+			<key>PayloadDescription</key>
+			<string>配置共享设备的所有权信息</string>
+			<key>PayloadDisplayName</key>
+			<string>共享设备配置</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.shareddeviceconfiguration.7672EBA9-125A-46DA-91C4-CCA6C21A8538</string>
+			<key>PayloadType</key>
+			<string>com.apple.shareddeviceconfiguration</string>
+			<key>PayloadUUID</key>
+			<string>7672EBA9-125A-46DA-91C4-CCA6C21A8538</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>FullScreen</key>
+			<true/>
+			<key>IsRemovable</key>
+			<true/>
+			<key>Label</key>
+			<string>Eric's Blog</string>
+			<key>PayloadDescription</key>
+			<string>配置 Web Clip 设置</string>
+			<key>PayloadDisplayName</key>
+			<string>Web Clip</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.webClip.managed.68BA3552-DA32-4037-B30B-85653E30A4C7</string>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadUUID</key>
+			<string>FB4E154E-4F49-452A-A6BF-C488CA1A8F7B</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Precomposed</key>
+			<true/>
+			<key>URL</key>
+			<string>http://www.zengjianpeng.com</string>
+		</dict>
+		<dict>
 			<key>AutoJoin</key>
 			<true/>
+			<key>CaptiveBypass</key>
+			<false/>
 			<key>EncryptionType</key>
 			<string>WPA</string>
 			<key>HIDDEN_NETWORK</key>
@@ -18,40 +65,54 @@
 			<key>Password</key>
 			<string>zjp501317315</string>
 			<key>PayloadDescription</key>
-			<string>Configures Wi-Fi settings</string>
+			<string>配置 Wi-Fi 设置</string>
 			<key>PayloadDisplayName</key>
-			<string>WiFi</string>
+			<string>Wi-Fi</string>
 			<key>PayloadIdentifier</key>
-			<string>ericzengdemacbook-pro.local.36559212-FF0E-4469-BED2-F421BAFDF925.com.apple.wifi.managed.B40E2698-14F8-42FF-8ED8-D7160DE4793A</string>
+			<string>com.apple.wifi.managed.CFFC9203-937F-4B7A-98D6-F1276854183D</string>
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
-			<string>B40E2698-14F8-42FF-8ED8-D7160DE4793A</string>
+			<string>FC8E1CB5-252B-419B-B687-17A875F7C7DA</string>
 			<key>PayloadVersion</key>
-			<real>1</real>
+			<integer>1</integer>
 			<key>ProxyType</key>
 			<string>None</string>
 			<key>SSID_STR</key>
 			<string>Eric_Sever</string>
 		</dict>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>配置用于移除描述文件的密码</string>
+			<key>PayloadDisplayName</key>
+			<string>移除描述文件</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.profileRemovalPassword.215FA07C-F3DC-4CBE-B002-F587DE70BC82</string>
+			<key>PayloadType</key>
+			<string>com.apple.profileRemovalPassword</string>
+			<key>PayloadUUID</key>
+			<string>E459880F-4019-418D-B499-8D50FCE11F25</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RemovalPassword</key>
+			<string>501317315</string>
+		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Eric_Sever网络密码设置（2015.8-2015.9） 使用完毕后即可删除</string>
+	<string>Eric_Sever密码（2016.10）</string>
 	<key>PayloadDisplayName</key>
-	<string>Network Deployment</string>
+	<string>Eric_Sever无线网络密码授权</string>
 	<key>PayloadIdentifier</key>
-	<string>ericzengdemacbook-pro.local.36559212-FF0E-4469-BED2-F421BAFDF925</string>
+	<string>ericdembp.lan.9F745EA1-36B5-4570-88B0-DFA0C0CB6E29</string>
 	<key>PayloadOrganization</key>
 	<string>Eric Zeng</string>
 	<key>PayloadRemovalDisallowed</key>
-	<false/>
+	<true/>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>6793EBA8-A26F-4448-91C4-E8A979349300</string>
+	<string>03FD8C8B-23C5-4E0D-9654-E508BC442003</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
-	<key>RemovalDate</key>
-	<date>2015-09-30T07:43:36Z</date>
 </dict>
 </plist>
