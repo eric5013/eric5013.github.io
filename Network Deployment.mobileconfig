@@ -14,20 +14,6 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
-			<key>PayloadDescription</key>
-			<string>配置共享设备的所有权信息</string>
-			<key>PayloadDisplayName</key>
-			<string>共享设备配置</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.shareddeviceconfiguration.7672EBA9-125A-46DA-91C4-CCA6C21A8538</string>
-			<key>PayloadType</key>
-			<string>com.apple.shareddeviceconfiguration</string>
-			<key>PayloadUUID</key>
-			<string>7672EBA9-125A-46DA-91C4-CCA6C21A8538</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>FullScreen</key>
 			<true/>
 			<key>IsRemovable</key>
@@ -39,7 +25,7 @@
 			<key>PayloadDisplayName</key>
 			<string>Web Clip</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.webClip.managed.68BA3552-DA32-4037-B30B-85653E30A4C7</string>
+			<string>com.apple.webClip.managed.FB4E154E-4F49-452A-A6BF-C488CA1A8F7B</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
@@ -50,6 +36,22 @@
 			<true/>
 			<key>URL</key>
 			<string>http://www.zengjianpeng.com</string>
+		</dict>
+		<dict>
+			<key>PayloadDescription</key>
+			<string>配置用于移除描述文件的密码</string>
+			<key>PayloadDisplayName</key>
+			<string>移除描述文件</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.profileRemovalPassword.E459880F-4019-418D-B499-8D50FCE11F25</string>
+			<key>PayloadType</key>
+			<string>com.apple.profileRemovalPassword</string>
+			<key>PayloadUUID</key>
+			<string>E459880F-4019-418D-B499-8D50FCE11F25</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RemovalPassword</key>
+			<string>501317315</string>
 		</dict>
 		<dict>
 			<key>AutoJoin</key>
@@ -69,7 +71,7 @@
 			<key>PayloadDisplayName</key>
 			<string>Wi-Fi</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.wifi.managed.CFFC9203-937F-4B7A-98D6-F1276854183D</string>
+			<string>com.apple.wifi.managed.FC8E1CB5-252B-419B-B687-17A875F7C7DA</string>
 			<key>PayloadType</key>
 			<string>com.apple.wifi.managed</string>
 			<key>PayloadUUID</key>
@@ -80,22 +82,6 @@
 			<string>None</string>
 			<key>SSID_STR</key>
 			<string>Eric_Sever</string>
-		</dict>
-		<dict>
-			<key>PayloadDescription</key>
-			<string>配置用于移除描述文件的密码</string>
-			<key>PayloadDisplayName</key>
-			<string>移除描述文件</string>
-			<key>PayloadIdentifier</key>
-			<string>com.apple.profileRemovalPassword.215FA07C-F3DC-4CBE-B002-F587DE70BC82</string>
-			<key>PayloadType</key>
-			<string>com.apple.profileRemovalPassword</string>
-			<key>PayloadUUID</key>
-			<string>E459880F-4019-418D-B499-8D50FCE11F25</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>RemovalPassword</key>
-			<string>501317315</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
@@ -111,7 +97,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>03FD8C8B-23C5-4E0D-9654-E508BC442003</string>
+	<string>A6763F8F-471A-4B3E-95F5-8F9A127F6386</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
