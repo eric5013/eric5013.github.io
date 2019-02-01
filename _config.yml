@@ -1,0 +1,8 @@
+title: Eric Zeng's Blog
+description: To Make a new world.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
