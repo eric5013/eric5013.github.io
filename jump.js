@@ -1,6 +1,6 @@
 console.log('预加载成功');
 //定义跳转页面
-var pageNum = 0;
+var pageNum = 1;
 
 //若为1，则跳转主页面
 //若为0，则跳转维护页面
