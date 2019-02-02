@@ -1,1 +1,1 @@
-alert("jump success!")
+alert("jump success!");
