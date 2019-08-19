@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)https://www.aircn.org/toolbox/desend.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-cn">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<title>Descend Calculator</title>
+<script language="javascript" type="text/javascript">
+function checkNum(str) {
+  for (var i=0; i<str.length; i++)
+  {
+    var ch = str.substring(i, i + 1)
+    if (ch!="." && ch!="+" && ch!="-" && ch!="e" && ch!="E" && (ch < "0" || ch > "9"))
+    {
+      alert("请输入有效的数字");
+      return false;
+    }
+  }
+  return true
+}
+var alt,ap,rate,spd,dis;
+function compute_rate(sel) {
+	if (checkdata() == false) return;
+	if (document.form0.dis_nm.value == "" && document.form0.dis_km.value == "") {
+		alert("请输入计划的下降距离!");
+		return;
+	}
+	if (document.form0.alt_ft.value != "") {
+		alt = document.form0.alt_ft.value;
+		//document.form0.alt_m.value = parseInt(alt / 3.28);
+	} else {
+		alt = document.form0.alt_m.value * 3.28;
+		//document.form0.alt_ft.value = parseInt(alt * 3.28);
+	}
+
+	if (document.form0.ap_ft.value != "") {
+		ap = document.form0.ap_ft.value;
+		//document.form0.ap_m.value = parseInt(ap / 3.28);
+	} else {
+		ap = document.form0.ap_m.value * 3.28;
+		//document.form0.ap_ft.value = parseInt(ap * 3.28);
+	}
+	
+	if (document.form0.dis_nm.value != "") dis = document.form0.dis_nm.value;
+	else dis = document.form0.dis_km.value / 1.852;
+	
+	if (document.form0.spd_nm.value != "") spd = document.form0.spd_nm.value;
+	else spd = document.form0.spd_km.value / 1.852;
+	
+	rate = (alt - ap) / ((dis / spd)  * 60);
+	
+	if (sel == 2) document.form0.rate_m.value = parseInt(rate/3.28/60);
+	else document.form0.rate_ft.value = parseInt(rate);
+}
+
+function compute_dis(sel) {
+	if (checkdata() == false) return;
+	if (document.form0.rate_ft.value == "" && document.form0.rate_m.value == "") {
+		alert("请输入下降率!");
+		return;
+	}
+	if (document.form0.alt_ft.value != "") {
+		alt = document.form0.alt_ft.value;
+		//document.form0.alt_m.value = parseInt(alt / 3.28);
+	} else {
+		alt = document.form0.alt_m.value * 3.28;
+		//document.form0.alt_ft.value = parseInt(alt * 3.28);
+	}
+
+	if (document.form0.ap_ft.value != "") {
+		ap = document.form0.ap_ft.value;
+		//document.form0.ap_m.value = parseInt(ap / 3.28);
+	} else {
+		ap = document.form0.ap_m.value * 3.28;
+		//document.form0.ap_ft.value = parseInt(ap * 3.28);
+	}
+	
+	if (document.form0.rate_ft.value != "") rate = document.form0.rate_ft.value;
+	else rate = document.form0.rate_m.value * 3.28 * 60;
+	
+	if (document.form0.spd_nm.value != "") spd = document.form0.spd_nm.value;
+	else spd = document.form0.spd_km.value / 1.852;
+	
+	dis = (alt - ap) / rate / 60 * spd;
+	
+	if (sel == 2) document.form0.dis_km.value = parseInt(dis*1.852);
+	else document.form0.dis_nm.value = parseInt(dis);
+}
+
+
+function checkdata() {
+	if (document.form0.alt_m.value == "" && document.form0.alt_ft.value == "") {
+		alert("请输入当前高度!");
+		return false;
+	}
+	if (document.form0.ap_m.value == "" && document.form0.ap_ft.value == "") {
+		alert("请输入机场高度!");
+		return false;
+	}
+	if (document.form0.spd_nm.value == "" && document.form0.spd_km.value == "") {
+		alert("请输入当前地速!");
+		return false;
+	}
+    if (checkNum(document.form0.alt_m.value) == false && checkNum(document.form0.alt_ft.value) == false) return false;
+    if (checkNum(document.form0.ap_m.value) == false && checkNum(document.form0.ap_ft.value) == false) return false;
+    if (checkNum(document.form0.spd_nm.value) == false && checkNum(document.form0.spd_km.value) == false) return false;
+}
+</script>
+
+<body>
+
+<div align="center">
+			<form name="form0" action="https://www.aircn.org/toolbox/desend.htm">
+	<table border="1" width="450" id="table1">
+		<tbody><tr>
+			<td width="96%" colspan="3">
+			<p align="center"><u>下 高 计 算 器</u></p></td>
+		</tr>
+		<tr>
+			<td width="22%">　</td>
+			<td width="38%" align="center">英尺</td>
+			<td width="36%" align="center">米</td>
+		</tr>
+		<tr>
+			<td width="22%">当前高度<font color="#FF0000"><b>*</b></font></td>
+			<td width="38%">
+			<p align="center">
+			<input type="text" name="alt_ft" size="19"></p></td>
+			<td width="36%">
+			<p align="center"><input type="text" name="alt_m" size="19"></p></td>
+		</tr>
+		<tr>
+			<td width="22%">机场高度<font color="#FF0000"><b>*</b></font></td>
+			<td width="38%">
+			<p align="center">
+			<input type="text" name="ap_ft" size="19"></p></td>
+			<td width="36%">
+			<p align="center"><input type="text" name="ap_m" size="19"></p></td>
+		</tr>
+		<tr>
+			<td>下降率</td>
+			<td>
+			<p align="center">
+			<input type="text" name="rate_ft" size="7">/分钟 <input onclick="compute_rate(1)" type="button" value="计算" name="rate_bt0"></p></td>
+			<td>
+			<p align="center"><input type="text" name="rate_m" size="7">/秒&nbsp; <input onclick="compute_rate(2)" type="button" value="计算" name="rate_bt"></p></td>
+		</tr>
+		<tr>
+			<td>　</td>
+			<td align="center">海里</td>
+			<td align="center">公里</td>
+		</tr>
+		<tr>
+			<td>下高地速<font color="#FF0000"><b>*</b></font></td>
+			<td>
+			<p align="center">
+			<input type="text" name="spd_nm" size="19"></p></td>
+			<td>
+			<p align="center"><input type="text" name="spd_km" size="19"></p></td>
+		</tr>
+		<tr>
+			<td>下降距离</td>
+			<td>
+			<p align="center"><input type="text" name="dis_nm" size="13"><input onclick="compute_dis(1)" type="button" value="计算" name="rate_bt1"></p></td>
+			<td>
+			<p align="center"><input type="text" name="dis_km" size="13"><input onclick="compute_dis(2)" type="button" value="计算" name="rate_bt2"></p></td>
+		</tr>
+		<tr>
+			<td colspan="3">使用方法:<br>
+			1.输入"当前高度","机场高度","当前地速","下降率"后,计算"下降距离".<br>
+			2.填写"当前高度","机场高度","当前地速","下降距离"后,计算"下降率".<br>
+			注意事项:<br>
+			1."当前高度","机场高度"为必填项,可选择填写公制或英制数据,如两者都有数据,以英制数据进行计算.<br>
+			2.可以自由选择以英制或公制计算,点击相应的计算按钮.<br>
+			3.下高地速可以在当前地速基础上稍减,如巡航450,可设为350</td>
+		</tr>
+	</tbody></table>
+			</form>
+</div>
