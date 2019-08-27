@@ -1,0 +1,15 @@
+/* 
+#wechat-qrcode{
+    background: yellow;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    /*可以覆盖在内容之上，因为采用absolute时，脱离文档流*/
+    z-index:22;
+    border: 2px solid whitesmoke;
+    display: none;
+} */
+
+/* a:hover #wechat-qrcode{
+    display: block;
+} */
