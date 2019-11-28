@@ -555,11 +555,7 @@ p.mathjax-block,
 </style>
 
 </head>
-<body class='typora-export' >
-
-	    <!-- Fixed navbar -->
-    
-    
+<body>
 		<nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
 				<div class="container">
 				  <div class="navbar-header">
@@ -630,129 +626,136 @@ p.mathjax-block,
 			  </nav>
 		  <!--- Fxied nav bar end-->
 <div id='write' class='is-mac'>
-	<h1><a name="ils规则分析总结" class="md-header-anchor"></a><span>ILS规则分析总结</span></h1>
-	<h2><a name="1-起点到iaf" class="md-header-anchor"></a><span>1. 起点到IAF</span></h2>
-	<h3><a name="11" class="md-header-anchor"></a><span>1.1 </span></h3>
-	<p><span>规则：飞机沿TAJ台284°径向线飞行。误差 ±10°，分值 5， 0.5 分/单位扣分</span></p>
+	<h1><a name="vordme进近评分分析" class="md-header-anchor"></a><span>VOR/DME进近：评分分析</span></h1>
+	<h2><a name="起点到iaf" class="md-header-anchor"></a><span>起点到IAF</span></h2>
+	<h3><a name="11" class="md-header-anchor"></a><span>1.1</span></h3>
+	<p><span>规则：飞机沿TAJ台280°径向线飞行(飞机航向280-180=100)。误差±10°，分值 5， 0.5 分/单位扣分</span></p>
 	<p><span>进入条件: 距离TAJ&gt;0.7海里 且 给出20秒的调整时间 </span></p>
-	<p><span>结束条件: 距离TAJ&lt;0.7海里 </span></p>
+	<p><span>结束条件: 距离TAJ&lt;0.7海里(1296.4)</span></p>
 	<p>&nbsp;</p>
 	<h3><a name="12" class="md-header-anchor"></a><span>1.2</span></h3>
 	<p><span>规则：最大下降率500ft/min。分值 5 ，0.02 分/每单位扣分</span></p>
 	<p><span>进入条件: 距离TAJ&gt;0.7海里 且 给出20秒的调整时间 </span></p>
 	<p><span>结束条件: 距离TAJ&lt;0.7海里</span></p>
 	<p>&nbsp;</p>
+	<p><span> </span></p>
 	<h3><a name="13" class="md-header-anchor"></a><span>1.3</span></h3>
 	<p><span>规则：过TAJ台高度3000ft ,误差（+200，-50） ，分值5 ，高于3000 0.025分/每单位 扣分低于3000 0.1分/每单位扣分</span></p>
 	<p><span>开始条件: 距离TAJ台&lt;0.7海里</span></p>
-	<p><span>结束条件：已经判定进入距TAJ台0.7海里范围内，距离TAJ台&gt;0.7海里</span></p>
+	<p><span>结束条件：已经进入距TAJ台0.7海里范围内，距离TAJ台&gt;0.7海里</span></p>
 	<p>&nbsp;</p>
-	<h2><a name="2-iaf到if" class="md-header-anchor"></a><span>2. IAF到IF</span></h2>
+	<h2><a name="iaf到if" class="md-header-anchor"></a><span>IAF到IF</span></h2>
 	<h3><a name="21" class="md-header-anchor"></a><span>2.1</span></h3>
-	<p><span>规则：过TAJ台后 切入TAJ 350径向线并保持， 误差 ±10° ，满分 5 ，0.5分/单位扣分</span></p>
-	<p><span>进入条件: 距离TAJ台&gt;0.7海里（1296.4）,且出台前要求切入TAJ350航道</span></p>
-	<p><span>结束条件: 距离TAJ台&gt;9.3海里(17223.6) </span></p>
+	<p><span>规则：过TAJ台后 切入TAJ 346径向线并保持， 误差 ±10° ，满分 5 ，0.5分/单位扣分</span></p>
+	<p><span>进入条件: 距离TAJ台&gt;0.7海里,且出台前要求切入TAJ346航道</span></p>
+	<p><span>结束条件: 距离TAJ台&gt;10.3海里(19075.6)</span></p>
 	<p>&nbsp;</p>
 	<h3><a name="22" class="md-header-anchor"></a><span>2.2</span></h3>
-	<p><span> 规则：过TAJD10高度2000ft,高度误差(+100,-50), 分值5，高于2000 0.05分/每单位扣分 低于2000 0.1分/每单位扣分</span></p>
-	<p><span>进入条件：距离TAJD10&lt;0.7海里</span></p>
-	<p><span>结束条件: 已经入过TAJD10，且距离TAJD10&gt;0.7海里 </span></p>
+	<p><span>规则：过TAJD11高度2000ft,高度误差(+100,-50), 分值5，高于2000 0.05分/每单位扣分 低于2000 0.1分/每单位扣分</span></p>
+	<p><span>进入条件：距离TAJD11&lt;0.7海里</span></p>
+	<p><span>结束条件: 已经入过TAJD11，且距离TAJD11&gt;0.7海里 </span></p>
 	<p>&nbsp;</p>
 	<h3><a name="23" class="md-header-anchor"></a><span>2.3</span></h3>
-	<p><span> 规则：程序转弯坡度最大30 ，分值 5 ， 0.33分/每单位</span></p>
-	<p><span>进入条件：距离TAJ台&gt;9.3海里</span></p>
-	<p><span>结束条件: 已进入转弯阶段，距离TAJ&lt;9.3海里</span></p>
+	<p><span>规则：程序转弯坡度最大30 ，分值 5 ， 0.33分/每单位</span></p>
+	<p><span>进入条件：距离TAJ台&gt;10.3海里</span></p>
+	<p><span>结束条件: 已进入转弯阶段，距离TAJ&lt;10.3海里</span></p>
 	<p>&nbsp;</p>
-	<h4><a name="231" class="md-header-anchor"></a><span>2.3.1</span></h4>
-	<p><span>规则：转弯后航向保持250，误差±10，分值 5 ,0.5分/每单位</span></p>
-	<p><span>进入条件: 距离TAJD10&gt;0.7海里。要求：出台前航向切入 250航道.</span></p>
-	<p><span>结束条件: 杆动</span></p>
+	<h3><a name="24" class="md-header-anchor"></a><span>2.4</span></h3>
+	<p><span>规则：转弯后航向保持248，误差±10，分值 5 ,0.5分/每分钟</span></p>
+	<p><span>进入条件: 距离TAJD11&gt;0.7海里，要求：出台前航向切入 248航道.</span></p>
+	<p><span>结束条件: 杆动，CDI&lt;127</span></p>
 	<p>&nbsp;</p>
-	<h4><a name="232" class="md-header-anchor"></a><span>2.3.2</span></h4>
-	<p><span> 规则：杆动后转弯，高度保持2000，误差±100英尺，分值 5， 0.05分/每单位扣分</span></p>
-	<p><span>进入条件: 距离TAJ台&gt;9.3海里，航向&lt;250</span></p>
-	<p><span>结束条件: 已进入转弯，距离TAJ&lt;9.3</span></p>
-	<p>&nbsp;</p>
-	<h4><a name="233" class="md-header-anchor"></a><span>2.3.3</span></h4>
+	<h3><a name="25" class="md-header-anchor"></a><span>2.5</span></h3>
+	<p><span>规则：杆动后转弯，高度保持2000，误差±100英尺，分值 5，0.05分/每单位扣分</span></p>
+	<p><span>进入条件: 距离TAJ台&gt;10.3海里，航向&lt;248</span></p>
+	<p><span>结束条件: 已进入转弯，距离TAJ&lt;10.3</span></p>
+	<h3><a name="26" class="md-header-anchor"></a><span>2.6</span></h3>
 	<p><span>规则：下降率最大500 ，分值 5， 0.02分/每单位 扣分</span></p>
-	<p><span>进入条件：距离TAJ&gt;9.3海里</span></p>
-	<p><span>结束条件: 距离TAJ&lt;9.3海里</span></p>
-	<p>&nbsp;</p>
-	<h2><a name="3-if到faf" class="md-header-anchor"></a><span>3. IF到FAF</span></h2>
+	<p><span>进入条件：距离TAJ&gt;10.3海里</span></p>
+	<p><span>结束条件: 距离TAJ&lt;10.3海里</span></p>
+	<h2><a name="if到faf" class="md-header-anchor"></a><span>IF到FAF</span></h2>
 	<h3><a name="31" class="md-header-anchor"></a><span>3.1</span></h3>
-	<p><span> 规则：到FAF点(TAJ D7.8)速度降至90，分值 5，0.5分/每单位扣分</span></p>
-	<p><span>进入条件: 距离TAJ=7.8海里，航向150 到 170之间 (160±10)</span></p>
-	<p><span>结束条件: 距离TAJ&lt;7.8海里，航向150 到 170之间 (160±10)</span></p>
+	<p><span>规则：到FAF点(TAJ D7.8)速度降至90，分值 5，0.5分/每单位扣分</span></p>
+	<p><span>进入条件: 距离TAJ=7.8海里(14445.6)，航向148 到 168之间 (158±10)</span></p>
+	<p><span>结束条件: 距离TAJ&lt;7.8海里，航向148 到 168之间 (158±10)</span></p>
 	<p>&nbsp;</p>
 	<h3><a name="32" class="md-header-anchor"></a><span>3.2</span></h3>
 	<p><span>规则：过FAF(TAJ D7.8)高度为2000，误差±50，分值 5，0.1分/单位扣分</span></p>
-	<p><span>进入条件: 距离TAJ=7.8海里，航向150 到 170之间 (160±10)</span></p>
-	<p><span>结束条件: 距离TAJ&lt;7.8海里，航向150 到 170之间 (160±10)</span></p>
-	<p>&nbsp;</p>
+	<p><span>进入条件: 距离TAJ=7.8海里，航向148 到 168之间(158±10)</span></p>
+	<p><span>结束条件: 距离TAJ&lt;7.8海里，航向148 到 168之间 (158±10)</span></p>
 	<h3><a name="33" class="md-header-anchor"></a><span>3.3</span></h3>
-	<p><span>规则：切入160航向后，保持航向道偏差,3/4刻度内有分 ，分值 6 ， 8分/刻度扣分</span></p>
-	<p><span>进入条件: 距离TAJ台&lt;9.3海里，距离TAJ台&gt;7.8海里(FAF),航向在 150 到 170之间(160±10)</span></p>
+	<p><span>规则：切入158航向后，保持航向道偏差，3/4刻度内有分 ，分值 6 ， 8分/刻度扣分</span></p>
+	<p><span>进入条件: 距离TAJ台在7.8海里(FAF)与10.3海里（IF）之间,航向在148到168之间(158±10)</span></p>
 	<p><span>结束条件: 距离TAJ台&lt;7.8海里</span></p>
-	<p>&nbsp;</p>
-	<h2><a name="4-faf到dh" class="md-header-anchor"></a><span>4. FAF到DH</span></h2>
+	<h3><a name="34" class="md-header-anchor"></a><span>3.4</span></h3>
+	<p><span>规则：切入158航向后，RMI误差在±10内，分值 5, 0.5分/单位扣分</span></p>
+	<p><span>进入条件：距离TAJ台在7.8海里(FAF)与10.3海里（IF）之间</span></p>
+	<p><span>结束条件: 距离TAJ台&lt;7.8海里</span></p>
+	<h2><a name="rmi" class="md-header-anchor"></a><span>RMI</span></h2>
 	<h3><a name="41" class="md-header-anchor"></a><span>4.1</span></h3>
-	<p><span>规则：保持航向道 160， 保持航向道偏差,3/4刻度内有分，分值 6， 8分/刻度扣分 </span></p>
-	<p><span>进入条件: 距离TAJ&lt;7.8海里，到达DH点之前，航向在170到150之间(160±10)</span></p>
-	<p><span>结束条件: 过DH点 （DH决断高度208ft）</span></p>
-	<p><strong><span>DH=208</span></strong></p>
-	<p>&nbsp;</p>
+	<p><span>规则：保持航向道 160， 航向道偏差，3/4刻度内有分，分值 6， 8分/刻度扣分</span></p>
+	<p><span>进入条件: 距离TAJ&lt;7.8海里，到达MDA点之前，航向在148到168之间(158±10)</span></p>
+	<p><span>结束条件: 过MDA点</span></p>
 	<h3><a name="42" class="md-header-anchor"></a><span>4.2</span></h3>
-	<p><span>规则：保持下滑道,3/4刻度内有分，分值 6， 8分/每刻度扣分</span></p>
-	<p><span>进入条件: 距离TAJ&lt;7.8海里，到达DH点之前，航向在150到170之间(160±10) </span></p>
-	<p><span>结束条件: 过DH点</span></p>
+	<p><span>规则：RMI误差在±10内，分值5， 0.5分/单位扣分</span></p>
+	<p><span>进入条件: 距离TAJ&lt;7.8海里，</span></p>
+	<p><span>结束条件: 过MDA点</span></p>
+	<p>&nbsp;</p>
+	<h3><a name="42-n144" class="md-header-anchor"></a><span>4.2</span></h3>
+	<p><span>规则：下降率在0-498内， 分值5 ，0.1分/每单位扣分</span></p>
+	<p><span>进入条件: 在TAJD3.2 与TAJD7.8 之间 航线在148到168之间(158±10)</span></p>
+	<p><span>结束条件：过D3.2(5926.4)</span></p>
 	<p>&nbsp;</p>
 	<h3><a name="43" class="md-header-anchor"></a><span>4.3</span></h3>
-	<p><span>规则：保持速度 90，误差 ±10， 分值 5， 0.5分/每单位扣分(高度低于1000，不再检测)</span></p>
-	<p><span>进入条件: 距离TAJ&lt;7.8海里，到达DH点之前，航向在150到170之间(160±10)或高度&gt;1000</span></p>
-	<p><span>结束条件: 过DH点</span></p>
-	<p>&nbsp;</p>
-	<h2><a name="5-dh到跑道" class="md-header-anchor"></a><span>5. DH到跑道</span></h2>
+	<p><span>规则：保持速度 90，误差 ±10， 分值 5， 0.5分/每单位扣分(高度低于1000)</span></p>
+	<p><span>进入条件: 距离TAJ&lt;7.8海里，到达MDA点之前，航向在148到168之间(158±10),高度&gt;1000</span></p>
+	<p><span>结束条件: 过MDA点</span></p>
+	<h3><a name="44" class="md-header-anchor"></a><span>4.4 </span></h3>
+	<p><span>//D7.0TAJ(12964m) -&gt;1700ft,D6.0TAJ(11112m) -&gt;1390ft,D5.0TAJ(9260) -&gt;1070ft </span></p>
+	<p><span>//满分15, 扣分：1分/-10ft,1分/50ft</span></p>
+	<h3><a name="45" class="md-header-anchor"></a><span>4.5 </span></h3>
+	<p><span>该项由两组数据构成。软件中分别实现了其评测功能</span></p>
+	<p><span>规则：D4.3TAJ （7963.6）时高度为860，D3.2TAJ(5926.4)时 高度560 ，分值10 ，低于标高0.1分/每单位扣分，高于标高0.02分/每单位扣分</span></p>
+	<p><span>进入条件: 过D4.3TAJ，航向158±10(瞬间值)</span></p>
+	<h2><a name="approach" class="md-header-anchor"></a><span>Approach</span></h2>
 	<h3><a name="51" class="md-header-anchor"></a><span>5.1</span></h3>
-	<p><span> 规则：飞越跑道入口前 保持航向道误差，3/4刻度内有分。 分值 3 ，4分/每单位扣分</span></p>
-	<p><span>进入条件: 过DH点，到达跑道入口前,航向在 150 到 170 之间(160±10)</span></p>
-	<p><span>结束条件: 过跑道入口</span></p>
+	<p><span>规则：进近下降率最大为500， 分值 6， 0.02分/每单位扣分</span></p>
+	<p><span>进入条件: 过MDA点,航向在 148 到 168 之间(158±10)</span></p>
+	<p><span>结束条件: 过MDA点</span></p>
+	<p><span>sink5_3=500</span></p>
+	<p><span>score5_3=6</span></p>
+	<p><span>sinkEval5_3=0.02</span></p>
 	<p>&nbsp;</p>
 	<h3><a name="52" class="md-header-anchor"></a><span>5.2</span></h3>
-	<p><span>规则：飞越跑道入口前 保持下滑道误差，3/4刻度内有分。 分值 3 ，4分/每单位扣分</span></p>
-	<p><span>进入条件: 过DH点，到达跑道入口前,航向在 150 到 170 之间(160±10)</span></p>
+	<p><span>规则：DA40入口速度范围 68-73kt,172入口速度范围 63-68kt, 空速误差±5， 分值 5 ，1分/每单位扣分</span></p>
+	<p><span>进入条件: 位于跑道入口点，航向158±10度之间。</span></p>
 	<p><span>结束条件: 过跑道入口</span></p>
+	<p><span>score5_4=5</span></p>
+	<p><span>minspeed5_4_DA40=68</span></p>
+	<p><span>maxspeed5_4_DA40=73</span></p>
+	<p><span>minspeed5_4_C172=63</span></p>
+	<p><span>maxspeed5_4_C172=68</span></p>
+	<p><span>speedEval5_4=1</span></p>
 	<p>&nbsp;</p>
-	<h3><a name="53" class="md-header-anchor"></a><span>5.3</span></h3>
-	<p><span> 规则：进近下降率最大为500， 分值 6， 0.02分/每单位扣分</span></p>
-	<p><span>进入条件: 过DH点，到达跑道入口前,航向在 150 到 170 之间(160±10)</span></p>
-	<p><span>结束条件: 过跑道入口</span></p>
+	<h2><a name="接地" class="md-header-anchor"></a><span>接地</span></h2>
+	<p><span>该阶段的触发条件是检测到飞机接地</span></p>
 	<p>&nbsp;</p>
-	<h3><a name="54" class="md-header-anchor"></a><span>5.4</span></h3>
-	<p><span> 规则： DA40入口速度范围 68-73kt,172入口速度范围 63-68kt, 空速误差±5， 分值 5 ，1分/每单位扣分</span></p>
-	<p><span>进入条件: 位于跑道入口点，航向160±10度之间。</span></p>
-	<p><span>结束条件: 过跑道入口</span></p>
-	<p>&nbsp;</p>
-	<h2><a name="6-接地" class="md-header-anchor"></a><span>6. 接地</span></h2>
 	<h3><a name="61" class="md-header-anchor"></a><span>6.1</span></h3>
-	<p><span> 规则：在白块处接地，分值 5，0.5分/每单位扣分</span></p>
-	<p><span>进入条件: 系统判定飞机位于地面上(瞬间量)</span></p>
-	<p>&nbsp;</p>
+	<p><span>规则：在白块处接地，分值 5，0.5分/每单位扣分</span></p>
+	<p><span>进入条件: 系统判定飞机位于地面上</span></p>
 	<h3><a name="62" class="md-header-anchor"></a><span>6.2</span></h3>
-	<p><span> 规则：接地率 标准值40，分值 3， 0.05分/每单位扣分</span></p>
-	<p><span>进入条件: 系统判定飞机位于地面上(瞬间量)</span></p>
-	<p>&nbsp;</p>
+	<p><span>规则：接地率 标准值40，分值 3， 0.05分/每单位扣分</span></p>
+	<p><span>进入条件: 系统判定飞机位于地面上</span></p>
 	<h3><a name="63" class="md-header-anchor"></a><span>6.3</span></h3>
-	<p><span> 规则：接地过载，标准值1.2G ，满分3， 5分/每单位扣分</span></p>
+	<p><span>规则：接地过载，满分 3， 5分/每单位扣分</span></p>
 	<p><span>进入条件: 系统判定飞机位于地面上</span></p>
-	<p>&nbsp;</p>
 	<h3><a name="64" class="md-header-anchor"></a><span>6.4</span></h3>
-	<p><span>规则：检测中线偏离 ，标准值2米，满分3， 1.5分/每单位</span></p>
+	<p><span>规则：检测中线偏离 ，满分3， 1.5分/每单位</span></p>
 	<p><span>进入条件: 系统判定飞机位于地面上</span></p>
-	<p><span>结束条件: 飞机停止运动</span></p>
+	<p><span>结束条件: 系统判定飞机停止运动</span></p>
 </div>
 
 <script src="js/scripts.min.js"></script>
 <script src="js/custom.min.js"></script>
-
 </body>
 </html>
