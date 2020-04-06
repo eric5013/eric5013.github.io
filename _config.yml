@@ -14,10 +14,10 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     ericzzzeng
-zhihu_username:     ceng-jian-peng-11
+#zhihu_username:     ceng-jian-peng-11
 github_username:    eric5013
-#twitter_username:   huxpro
-#facebook_username:  huxpro
+#twitter_username:   
+#facebook_username:  
 #linkedin_username:  firstname-lastname-idxxxx
 
 
