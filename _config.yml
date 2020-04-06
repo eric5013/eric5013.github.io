@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     eric5013
- zhihu_username:     eric5013
+ zhihu_username:    eric5013
 github_username:    eric5013
 #twitter_username:   huxpro
 #facebook_username:  huxpro
