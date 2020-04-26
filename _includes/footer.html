@@ -7,9 +7,12 @@
                 {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    Copyrights &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    
+                    {% if site.icp != '' %}
+                    ICP证:<a href="https://www.beian.miit.gov.cn"> {{ site.icp }} </a>
+                    <br>
+                    {% endif %}
                 </p>
             </div>
         </div>
