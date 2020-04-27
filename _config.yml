@@ -6,7 +6,7 @@ email: admin@zengjianpeng.com
 description: "北航大飞行学员/工程师，分享知识，收获快乐"
 keyword: "民航, 飞行员, 飞行学员, 前端, 开发, 编程, 服务器, 软件"
 url: "https://www.zengjianpeng.com"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ''                              # for example, '/blog' if your blog hosted on 'host/blog'
 icp: 粤ICP备20028673号-1
 
 # Publish posts or collection documents with a future date.
