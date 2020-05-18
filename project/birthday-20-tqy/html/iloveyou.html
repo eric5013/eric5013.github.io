@@ -202,11 +202,14 @@
       <li><img src="../img/timg.gif" style="width:100%;height:100%"></li>
     </ul>
 
-    <audio src="../haohao.mp3" autoplay="autoplay" loop="loop">
-    
+    <audio id="audio1" src="../haohao.mp3" autoplay="autoplay" loop="loop">
+
   <script src='../js/jquery.js'></script>
   <script>
   $(".js-event-birth").click(function(){
+    var audioObj = document.getElementById("audio1")
+    audioObj.play()
+    
       alert("在？")
 alert("这里有个问卷")
 alert("不知道是不是给你的")
