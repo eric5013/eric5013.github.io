@@ -1,7 +1,7 @@
 ---
 title: JS引入文件报错
 subtitle: 错误信息：Uncaught SyntaxError： Cannot use import statement outside a module
-header-img: /img/post-bg-js-version.jpg
+header-img: img/post-bg-js-version.jpg
 date: 2020-06-10
 category: dev
 author: Eric
