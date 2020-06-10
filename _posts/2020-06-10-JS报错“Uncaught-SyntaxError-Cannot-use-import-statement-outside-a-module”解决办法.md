@@ -1,6 +1,6 @@
 ---
 title: JS引入文件报错
-subtitle: 错误信息：Uncaught SyntaxError: Cannot use import statement outside a module
+subtitle: 错误信息：Uncaught SyntaxError： Cannot use import statement outside a module
 date: 2020-06-10
 category: dev
 author: Eric
