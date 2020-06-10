@@ -1,7 +1,7 @@
 # Site settings
 title: 艾瑞克的小站
 SEOTitle: 艾瑞克的博客
-header-img: img/home-bg.jpg
+header-img: img/post-bg-universe.jpg
 email: admin@zengjianpeng.com
 description: "北航大飞行学员/工程师，分享知识，收获快乐"
 keyword: "民航, 飞行员, 飞行学员, 前端, 开发, 编程, 服务器, 软件"
@@ -13,7 +13,7 @@ icp: 粤ICP备20028673号-1
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 weibo_username:     ericzzzeng
 #zhihu_username:     ceng-jian-peng-11
 github_username:    eric5013
