@@ -1,5 +1,5 @@
 ---
-title: JS报错“Uncaught SyntaxError: Cannot use import statement outside a module”解决办法
+title: JS报错Uncaught SyntaxError: Cannot use import statement outside a module解决办法
 date: 2020-06-10
 category: dev
 author: Eric
