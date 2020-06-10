@@ -28,7 +28,7 @@ tags:
 
 **    输入：gem sources -a https://ruby.taobao.org**
 
-**注：国内使用淘 宝的源比较稳定，且安装或更新网速都比较快**。
+**注：国内使用淘 的源比较稳定，且安装或更新网速都比较快**。
 
 **4\. 更新源的缓存**
 
@@ -51,18 +51,19 @@ Retrying fetcher due to error (4/4): Bundler::HTTPError Could not fetch specs fr
 Could not fetch specs from https://rails-assets.org/
 ERROR: Service 'web' failed to build: The command '/bin/sh -c bundle install --without test development' returned a non-zero code: 17
 ```
-![](http://q79ooepqe.bkt.clouddn.com/mweb/20200407-15861911377265-20180314101415124..)
+![](https://cdn.jsdelivr.net/gh/eric5013/image@master/2020/06/10/r4ZUK01591764328566r4ZUK0.png)
 
 在 docker on OSEM 应用程序中, 有个 gemfile 文件.
 
-![](http://q79ooepqe.bkt.clouddn.com/mweb/20200407-15861911377318-20180314101935974..)
+![](https://cdn.jsdelivr.net/gh/eric5013/image@master/2020/06/10/8VOFrC15917643305398VOFrC.png)
 
 https://ruby.taobao.org 页面:
 
-![](http://q79ooepqe.bkt.clouddn.com/mweb/20200407-15861911377336-20180314102330644..)
+![](https://cdn.jsdelivr.net/gh/eric5013/image@master/2020/06/10/kySEv11591764333695kySEv1.png)
 
 修改之后还是无法安装.
 
-![](http://q79ooepqe.bkt.clouddn.com/mweb/20200407-15861911377354-20180314104831322..)
+![](https://cdn.jsdelivr.net/gh/eric5013/image@master/2020/06/10/CkL4C01591764339128CkL4C0.png)
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5264793&auto=1&height=66"></iframe>
+
+

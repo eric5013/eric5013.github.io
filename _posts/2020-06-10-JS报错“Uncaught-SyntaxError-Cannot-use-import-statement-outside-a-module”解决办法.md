@@ -1,6 +1,7 @@
 ---
 title: JS引入文件报错
 subtitle: 错误信息：Uncaught SyntaxError： Cannot use import statement outside a module
+header-img: /img/post-bg-js-version.jpg
 date: 2020-06-10
 category: dev
 author: Eric
@@ -21,3 +22,4 @@ HTML 网页中，浏览器通过 `script` 标签加载 `JavaScript` 脚本。由
 
 HTML想用ES6，`<script>`加`type="module”`
 
+ 
