@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Question Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/loading.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="card-head">答题卡 | Answer Sheets</div>
+            <div class="search-bar">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Type Question Number" aria-label=""
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Go!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="question-block" id="question-block">
+                <div class="btn btn-outline-info single-block">1</div>
+                <div class="btn btn-outline-info single-block">2</div>
+                <div class="btn btn-outline-info single-block">3</div>
+                <div class="btn btn-outline-info single-block">40</div>
+                <div class="btn btn-outline-info single-block">41</div>
+            </div>
+
+        </div>
+        <div class="answer-panel">
+            <div class="card-head">
+                <div class="icon"><img src="src/right.png" alt="" srcset=""></div>
+                <div class="correct-num">正确题数：<span>0</span></div>
+                <div class="icon"><img src="src/wrong.png" alt="" srcset=""></div>
+                <div class="err-num">错误题数：<span>0</span></div>
+                <div class="icon"><img src="src/lapse.png" alt="" srcset=""></div>
+                <div class="lapse-time" id="lapse-time">00:00:00</div>
+            </div>
+            <div class="question-container">
+                <div class="question">
+                    <span class="qid" id="qid"></span>
+                    <span>.</span>
+                    <span class="text"></span>
+                </div>
+                <div class="options">
+                    <div class="option" id="optionA">
+                        <div class="option-icon">A.</div>
+                        <div class="option-text">texttext</div>
+                    </div>
+                    <div class="option" id="optionB">
+                        <div class="option-icon">B.</div>
+                        <div class="option-text">texttext</div>
+                    </div>
+                    <div class="option" id="optionC">
+                        <div class="option-icon">C.</div>
+                        <div class="option-text">texttext</div>
+                    </div>
+                    <div class="option" id="optionD">
+                        <div class="option-icon">D.</div>
+                        <div class="option-text">texttext</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-control">
+                <button class="btn btn-secondary prev-next" id="q-prev">Previous</button>
+                <button class="btn btn-success prev-next" id="q-next">Next</button>
+                <button class="btn btn-primary" id="submit-ans" style="display: none;">Submit</button>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://www.zengjianpeng.com/footer/" frameborder="0" style="width:100%;height:17em" scrolling="no"
+        allowtransparency="true"></iframe>
+    <div id="mask" style="display: none;"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.js"></script>
+    <!-- <script src="src/jquery.min.js"></script> -->
+    <script src="src/loading.js"></script>
+    <script src="src/timer.js"></script>
+    <script src="src/loadQuestion.js"></script>
+</body>
+
+</html>
