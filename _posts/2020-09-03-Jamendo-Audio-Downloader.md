@@ -2,6 +2,8 @@
 title: Jamendo Audio Downloader
 author: Eric
 date: 2020-09-03
+tags:
+ - JavaScript
 ---
 
 ```javascript

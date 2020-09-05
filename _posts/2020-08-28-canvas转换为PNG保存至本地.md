@@ -2,6 +2,8 @@
 title: canvas转换为PNG保存至本地
 date: 2020-08-28
 author: Eric
+tags:
+ - JavaScript
 ---
 
 ```javascript
