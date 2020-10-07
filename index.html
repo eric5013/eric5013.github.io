@@ -40,14 +40,37 @@ description: "从前有座山，山里有座庙。"
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
 
-            <h2 class="post-title">
+            <h2 class="post-title"> 
+                {% if page.origin %}
+                <span style="letter-spacing: .034em;
+                             hyphens: auto;
+                             margin: 0 10px 10px 0;
+                             -webkit-tap-highlight-color: rgba(0,0,0,0);
+                             display: inline-block;
+                             vertical-align: middle;
+                             font-size: 12px;
+                             line-height: 1.67;
+                             -webkit-border-radius: 2px;
+                             width: auto;
+                             overflow: hidden;
+                             text-overflow: ellipsis;
+                             white-space: nowrap;
+                             max-width: 70%;
+                             margin-right: 8px;
+                             padding: 0 4px;
+                             background: rgba(255,255,255,0.05);
+                             color: rgba(255,255,255,0.5);">原创</span>
+                {% endif %}
                 {{ post.title }}
+                
             </h2>
             {% if post.subtitle %}
             <h3 class="post-subtitle">
                 {{ post.subtitle }}
             </h3>
             {% endif %}
+
+            {% if page.preview != false %}
             
                 <div class="post-content-preview">
                     {% if post.lang == 'en' %}
@@ -56,6 +79,8 @@ description: "从前有座山，山里有座庙。"
                     {{ post.content | strip_html | truncate:100 }}
                     {% endif %}
                 </div>
+
+            {% endif %}
             
         </a>
         <p class="post-meta">
@@ -82,3 +107,5 @@ description: "从前有座山，山里有座庙。"
     {% endif %}
 </ul>
 {% endif %}
+
+<!--  -->

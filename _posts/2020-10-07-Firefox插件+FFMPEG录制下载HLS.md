@@ -1,6 +1,7 @@
 ---
 title: Firefox插件+FFMPEG录制下载HLS
 date: 2020-10-07
+origin: true
 ---
 
 **需要用到的工具（有能力达到后面的目的的话，也可以换成其他的）：**
