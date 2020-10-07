@@ -11,19 +11,19 @@ description: "从前有座山，山里有座庙。"
             <h2 class="post-title" style="color:red;">
                 【置顶】{{ post.title }}
             </h2>
-            {% if post.subtitle %}
+<!--             {% if post.subtitle %}
             <h3 class="post-subtitle">
                 {{ post.subtitle }}
             </h3>
-            {% endif %}
+            {% endif %} -->
             
-                <div class="post-content-preview">
+<!--                 <div class="post-content-preview">
                     {% if post.lang == 'en' %}
                     {{ post.content | strip_html | truncate:150 }}
                     {% else %}
                     {{ post.content | strip_html | truncate:100 }}
                     {% endif %}
-                </div>
+                </div> -->
             
         </a>
 <!--         <p class="post-meta">
@@ -36,7 +36,7 @@ description: "从前有座山，山里有座庙。"
 {% endfor %}
 
 {% for post in paginator.posts %}
-    {% if !post.post-on-top %}
+    {% if post.post-on-top != 'true' %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
 
