@@ -69,7 +69,8 @@ description: "从前有座山，山里有座庙。"
             </h3>
             {% endif %}
 
-            {% if !! post.preview %}
+            {% if post.preview %}
+            {% else %}
             
                 <div class="post-content-preview">
                     {% if post.lang == 'en' %}
