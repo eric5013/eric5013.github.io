@@ -41,7 +41,7 @@ description: "从前有座山，山里有座庙。"
         <a href="{{ post.url | prepend: site.baseurl }}">
 
             <h2 class="post-title"> 
-                {% if page.origin %}
+                {% if page.origin == true %}
                 <span style="letter-spacing: .034em;
                              hyphens: auto;
                              margin: 0 10px 10px 0;
