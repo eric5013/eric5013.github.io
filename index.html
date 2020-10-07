@@ -36,7 +36,7 @@ description: "从前有座山，山里有座庙。"
 {% endfor %}
 
 {% for post in paginator.posts %}
-    {% if post.post-on-top != 'true' %}
+    {% if post.post-on-top != true %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
 
