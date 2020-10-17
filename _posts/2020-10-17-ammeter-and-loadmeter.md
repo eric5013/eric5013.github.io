@@ -2,7 +2,7 @@
 title: ammeter and loadmeter
 author: Eric
 date: 2020-10-17
-permalink: /cfc/doc/ammeter-and-loadmeter
+permalink: /cfc/doc/ammeter-and-loadmeter/
 ---
 
 ![ammeter-and-loadmeter](https://gitee.com/eric-zeng/image/raw/master/picBed/image/png/Y0o4Uv1602902874438.png)
