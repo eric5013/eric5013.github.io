@@ -1,8 +1,9 @@
 ---
-title: ammeter and loadmeter
+title: Ammeter and loadmeter
 author: Eric
 date: 2020-10-17
 permalink: /cfc/doc/ammeter-and-loadmeter/
+origin: true
 ---
 
 ![ammeter-and-loadmeter](https://gitee.com/eric-zeng/image/raw/master/picBed/image/png/Y0o4Uv1602902874438.png)
