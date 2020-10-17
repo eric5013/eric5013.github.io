@@ -2,6 +2,7 @@
 title: Ammeter and loadmeter
 author: Eric
 date: 2020-10-17
+header-style: text
 permalink: /cfc/doc/ammeter-and-loadmeter/
 origin: true
 ---
