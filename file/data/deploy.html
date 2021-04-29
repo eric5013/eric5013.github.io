@@ -1,0 +1,123 @@
+<!-- encrypt.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/app.css">
+</head>
+
+<body>
+    <div class="container fluid">
+        <h1>Link Generator</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">文件名</span>
+            </div>
+            <input id="filename" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">文件说明</span>
+            </div>
+            <input id="desc" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">链接</span>
+            </div>
+            <input id="href" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">图像地址</span>
+            </div>
+            <input id="img" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">备注（HTML）</span>
+            </div>
+            <input id="note" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">有效期（分钟）</span>
+            </div>
+            <input id="validMin" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="btn-generate">Generate</button>
+        <div class="input-group py-3 mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Result URL</span>
+            </div>
+            <input id="result" type="text" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+    </div>
+
+</body>
+<script src="../src/jquery.min.js"></script>
+<script src="../src/bootstrap.min.js"></script>
+<script src="../src/encryptJS.js"></script>
+<script>
+    function doCopy(content){
+        var aux = document.createElement("div");
+      aux.setAttribute("id", "copy-target")
+      aux.innerText = content
+      document.body.append(aux)
+      const range = document.createRange();
+      range.selectNode(document.getElementById('copy-target'));
+      const selection = window.getSelection();
+      if (selection.rangeCount > 0) selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand('copy');
+      document.body.removeChild(aux);
+    }
+
+    var PUBLIC_KEY =
+        "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDU9UUh/K2VCb69ktYCwXtwVfD5xBgzJZq0BslrgOh/kVYf8bLJDF3qWpRAuFswti3V3p0aKP8SBrWZ5nvXQDICujXjRwWAuSKIBxJSpxUpGmGO1LtlnapFezCR0PSAcu3ZOLJ15lACVMuJKr1x1xCgB6w1YjWOEVrS87TbTGXsFwIDAQAB"
+    //使用公钥加密
+    var encrypt = new JSEncrypt();
+    //encrypt.setPrivateKey('-----BEGIN RSA PRIVATE KEY-----'+PRIVATE_KEY+'-----END RSA PRIVATE KEY-----');
+    encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+    $("#btn-generate").click(function (e) {
+        e.preventDefault();
+        
+        if ($("#filename").val() !== '' && $('#href').val().indexOf('http') !== -1) {
+            try {
+                var encryptStr = JSON.stringify({
+                    filename: String(encrypt.encrypt($('#filename').val())),
+                    href: String(encrypt.encrypt($('#href').val())),
+                    image: $('#img').val().indexOf('http')!==-1? $('#img').val():"./src/down-default.png",
+                    note: $('#note').val()!==""?$('#note').val():"",
+                    desc: $('#desc').val()!==""?$('#desc').val():"",
+                    valid: new Date().valueOf() + (parseInt($('#validMin').val()) || 1) * 60000,
+                })
+                console.log(encryptStr)
+                console.log('加密后数据:%o', Base64.encodeURL(encryptStr));
+                $('#result').val("https://www.zengjianpeng.com/file/?token=" + Base64.encode(encryptStr))
+                doCopy($('#result').val())
+            } catch (error) {
+                alert(error)
+            }
+
+
+        } else {
+            alert('数据写入有误！')
+        }
+    });
+</script>
+
+</html>
