@@ -431,6 +431,7 @@ A station model will include:
 
 *   Type of Observation—A round model indicates an official weather observer made the observation. A square model indicates the observation is from an automated station. Stations located offshore give data from ships, buoys, or offshore platforms.
 *   Sky Cover—The station model depicts total sky cover and will be shown as clear, scattered, broken, overcast, or obscured/partially obscured.
+    *   ![example of sky cover](https://cdn.jsdelivr.net/gh/eric5013/image/image/2021/06/10/cloud_cover_new.gif)
 *   Clouds—Cloud types are represented by specific symbols. Low cloud symbols are placed beneath the station model, while middle and high cloud symbols are placed directly above the station model. Typically, only one type of cloud will be depicted with the station model.
 *   Sea Level Pressure—Sea level pressure given in three digits to the nearest tenth of a millibar. For 1000 mbs or greater, prefix a 10 to the three digits. For less than 1000 mbs, prefix a 9 to the three digits.
 *   Pressure Change/Tendency—Pressure change in tenths of millibars over the past 3 hours. This is depicted directly below the sea level pressure.
