@@ -2,6 +2,8 @@
 title: Aviation weather reporting
 origin: true
 date: 2021-06-10
+tags:
+ - 飞行技术 
 ---
 
 Understanding aviation weather reporting

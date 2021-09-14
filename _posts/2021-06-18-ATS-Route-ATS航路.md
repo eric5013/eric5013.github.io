@@ -2,6 +2,8 @@
 title: ATS Route ATS航路
 date: 2021-06-18
 author: 中国民航大学
+tags:
+ - 飞行技术 
 ---
 
 ![ATS航路-0](https://cdn.jsdelivr.net/gh/eric5013/image/image/2021/06/18/ATS%E8%88%AA%E8%B7%AF-0.jpg)
